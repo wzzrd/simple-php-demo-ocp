@@ -43,7 +43,7 @@ if (mysqli_query($conn, "CREATE TABLE IF NOT EXISTS names (id INT(3) UNSIGNED AU
 }
 
 /* Seed some data */ 
-if (mysqli_query($conn, "INSERT INTO lecture.names (name) VALUES ('Sterling'), ('Cheryl'), ('Lana'), ('Cyril'), ('Pam'), ('Malory'), ('Other Barry')") == TRUE) {
+if (mysqli_query($conn, "INSERT INTO names (name) VALUES ('Sterling'), ('Cheryl'), ('Lana'), ('Cyril'), ('Pam'), ('Malory'), ('Other Barry')") == TRUE) {
     echo "Pushed data into table...<br/>";
 } else { 
     echo "Unable to push data into table...</br>";
